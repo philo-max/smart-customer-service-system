@@ -109,7 +109,7 @@ with gr.Blocks(title="智能客服系统", theme=custom_theme) as demo:
 
         with gr.Column(scale=1, min_width=240):
             gr.Markdown("### 记忆窗口状态")
-            memory_panel = gr.HTML(value=memory.get_panel_html(), every=3)
+            memory_panel = gr.HTML(value=memory.get_panel_html, every=3)
 
     gr.Markdown(
         """

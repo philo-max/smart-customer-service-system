@@ -139,14 +139,15 @@ def agent_chat(message: str, history: list):
 
         # 3. 检查是否需要工具
         if "Action:" in agent_text:
-            json_match = re.search(r'\{[^{}]*\}', agent_text)
-            if not json_match:
+            start = agent_text.find('{')
+            end = agent_text.rfind('}')
+            if start == -1 or end == -1 or end < start:
                 messages.append({"role": "assistant", "content": agent_text})
-                messages.append({"role": "user", "content": "请用标准 JSON 格式输出 Action"})
+                messages.append({"role": "user", "content": "请用标准 JSON 格式输出 Action，形如 Action: {...}"})
                 continue
 
             try:
-                action = json.loads(json_match.group(0))
+                action = json.loads(agent_text[start:end+1])
                 tool_name = action.get("tool", "")
                 params    = action.get("params", {})
 
