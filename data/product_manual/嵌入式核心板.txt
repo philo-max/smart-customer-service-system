@@ -1,0 +1,27 @@
+鸿芯智谷 APOLLO 系列嵌入式核心板产品手册
+
+APOLLO-RK3588 旗舰版
+- 处理器：瑞芯微 RK3588，8 核 64 位，4×Cortex-A76 + 4×Cortex-A55
+- GPU：ARM Mali-G610 MP4，支持 8K 视频编解码
+- 内存：8GB LPDDR4x，存储：64GB eMMC + 128GB NVMe SSD
+- 接口：千兆以太网×2，USB 3.0×4，HDMI 2.1×2，PCIe 3.0×1
+- 工作温度：-20°C ~ 70°C（工业级）
+- 价格：￥3,980
+
+APOLLO-RK3568 标准版
+- 处理器：瑞芯微 RK3568，4 核 Cortex-A55
+- GPU：ARM Mali-G52，支持 4K 视频解码
+- 内存：4GB LPDDR4，存储：32GB eMMC
+- 接口：千兆以太网×1，USB 3.0×2，HDMI 2.0×1
+- 工作温度：0°C ~ 60°C（商业级）
+- 价格：￥1,980
+
+APOLLO-i.MX8M Plus 工业版
+- 处理器：NXP i.MX8M Plus，4 核 Cortex-A53 + Cortex-M7
+- 特色：内置 NPU（2.3 TOPS），适合边缘 AI 推理
+- 内存：4GB LPDDR4，存储：16GB eMMC
+- 接口：双千兆以太网（支持 TSN），USB 3.0×2，CAN FD×2
+- 工作温度：-40°C ~ 85°C（宽温级）
+- 价格：￥4,580
+
+售后服务：所有核心板质保 3 年，7×24 小时技术支持。

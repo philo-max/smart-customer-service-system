@@ -1,0 +1,21 @@
+鸿芯智谷 MERCURY 系列工业开发平台产品手册
+
+MERCURY-Linux 标准平台
+- 搭载 APOLLO-RK3588 核心板
+- 预装 Ubuntu 22.04 LTS + ROS 2 Humble
+- 扩展接口：40pin GPIO、MIPI CSI/DSI、I2C、SPI、UART
+- 适用场景：机器人控制、工业自动化、AI 推理
+- 价格：￥8,980（含核心板 + 底板 + 电源）
+
+MERCURY-Android 移动平台
+- 搭载 APOLLO-RK3568 核心板
+- 预装 Android 13 + HMI 框架
+- 7 寸触控屏（1024×600），支持多点触控
+- 适用场景：人机界面、信息亭、售货机
+- 价格：￥6,580
+
+MERCURY-FPGA 混合平台
+- APOLLO-i.MX8M Plus + Xilinx Artix-7 FPGA
+- ARM 负责应用逻辑，FPGA 负责硬件加速
+- 适用场景：高速数据采集、实时信号处理
+- 价格：￥12,800
