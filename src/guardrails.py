@@ -71,12 +71,12 @@ class OutputGuard:
     """
 
     SENSITIVE_PATTERNS = [
-        (r"[A-Za-z0-9]{32,}", "疑似 API Key/Token"),
+        (r"\b[A-Za-z0-9]{32}\.[A-Za-z0-9]{16,}\b", "疑似 智谱 API Key/Token"),
         (r"\b\d{16,19}\b", "疑似银行卡号"),
         (r"\b1[3-9]\d{9}\b", "疑似手机号"),
         (r"\b\d{17}[\dXx]\b", "疑似身份证号"),
         (r"password\s*[:=]\s*\S+", "疑似密码明文泄露"),
-        (r"sk-[A-Za-z0-9]{32,}", "疑似 OpenAI API Key"),
+        (r"\bsk-[A-Za-z0-9]{32,}\b", "疑似 OpenAI API Key"),
     ]
 
     UNSAFE_CONTENT = [
